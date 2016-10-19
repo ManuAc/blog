@@ -1,6 +1,4 @@
 $(document).on('click', '#scrolltop', function(){
-    console.log('going back')
-    //window.scrollTo(0,h1).animate(900);
      $('html, body').stop().animate({
           'scrollTop':0
       }, 2000, 'swing')
@@ -8,6 +6,7 @@ $(document).on('click', '#scrolltop', function(){
 
 // SMOOTH NAV SCROLL 
 $(function() {
+  console.log('inside scroll')
   $('a[href*=\\#]:not([href=\\#])').click(function() {
     if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 
