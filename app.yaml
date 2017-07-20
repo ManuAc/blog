@@ -12,8 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# This file is used by Rack-based servers to start the application.
+# [START all]
+# [START step_1]
+entrypoint: bundle exec rackup --port $PORT
+env: flex
+runtime: ruby
+# [END step_1]
 
-require_relative 'config/environment'
+env_variables:
+  SECRET_KEY_BASE: [b48c900dbf67987d15586a9ff4b9d467789ab2fa7bc82cb977075d454d3271dd7f105435df3b3581c801ffc2ae76d2ad3922d9297cc7b0411e21ddcf7fc2e224]
+# [END all]
 
-run Rails.application
