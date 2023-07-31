@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ManuAc</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Im Manu, a Software Engineer. I live in Bangalore and I am currently working as a full stack developer in Thrillophilia, an Indian Tours and Activities startup.">
+  <meta name="keywords" content="Manu, ManuAc, Ac, Blog, Rvce, UL, Urban Ladder, Software Developer, Engineer, Ruby, Rails, C++">
+  <meta name="author" content="ManuAc">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li id="nav-logo"><a href="#" class="inactiveLink">manu ac</a></li>
+        <li class="menu-list"><a href="#about">about</a></li>
+        <li class="menu-list"><a href="#work">work</a></li>
+
+        <!-- ToDo: Projects -->
+        <!-- <li class="menu-list"><a href="#projects">projects</a></li> -->
+
+        <li class="menu-list"><a href="#contact">contact</a></li>
+        <li class="menu-list last"><a href="http://www.manuac.in/ManuAc.pdf" target="_blank">resume</a></li>
+
+        <!-- ToDo: Blog -->
+        <!-- <li class="menu-list"><a href="/articles">blog</a></li> -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!-- About section -->
+<div class="container about" id="about">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <%= image_tag('workspace.jpg', class: "img-responsive workspace") %>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <br><br>
+      <p class="intro">Im Manu, a Software Engineer. I live in Bangalore and I am currently working as a full stack developer in Thrillophilia, an Indian Tours and Activities startup.</p>
+
+      <p class="intro">I believe in contineous learning and applying my technical knowledge to solve real world problems. I thoroughly enjoy building applications from scratch. My areas of interests are <i>Machine Learning</i> and <i>Web Technologies</i>.</p>
+
+      <p class="intro">Other than work, I love playing Shuttle badminton, watching Tennis and Cricket. I enjoy Travelling, going on Road Trips with friends. Trying hard to get the habit of reading novels, but haven't succeeded yet.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Work section -->
+
+<section class="work">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <span id="work" href="#" class="work-heading">WORK</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container work-container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <ul class="timeline">
+        <li>
+          <div class="timeline-badge thrill">4</div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Thrillophilia</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> 05/2016 to Present</small></p>
+            </div>
+            <div class="timeline-body">
+              <p><a href="https://www.thrillophilia.com/" target="_blank">Thrillophilia</a> is an Indian Tours and Activities company headquartered in Bangalore, Karnataka.</p>
+              <p>I joined Thrillophilia as a Software Developer in May/2016 and since then I have been working on building and integrating various modules and services for both Desktop and Mobile (APIs). As a part of small team, my work includes owning and developing various modules from end to end on a daily basis.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge ul">3</div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Urban Ladder</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> 06/2015 to 04/2016</small></p>
+            </div>
+            <div class="timeline-body">
+              <p><a href="https://www.urbanladder.com/" target="_blank">Urban Ladder</a> is a curated online furniture seller in Bangalore, India. I joined Urban Ladder as a fresher and I thoroughly enjoyed my time with UL.</p>
+              <p>During my course of time with UL, I had worked on various tasks ranging from building a simple sitemap validator to building API services like Estimated Delivery Dates.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge intel">2</i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Intel Technologies (Internship)</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> 01/2015 to 05/2015</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>I joined <a href="http://www.intel.com/" target="_blank">Intel</a> as an Application Developer Intern.</p>
+              <p>During this period, I had worked on building a centralized logger for their OS Imaging Solution system (iLab) which supports creating templates of different Operating Systems and restoring them on multiple machines as and when required.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge rvce">1</div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">R V College of Engineering</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> 08/2011 to 05/2015</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>I have an engineering degree in Information Science and Engineering from <a href="http://www.rvce.edu.in/" target="_blank">R V College Of Engineering.</a></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer" id="contact">
+  <div class="container">
+    <center>
+      <div id="social">
+        <br><br>
+        <a href="https://in.linkedin.com/in/manu-a-c-b4581068" target="_blank">
+          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/ManuAc" target="_blank">
+          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/manikanta.manu.39" target="_blank">
+          <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/_acmanu" target="_blank">
+          <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/ManuAC93" target="_blank">
+          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        </a>
+        <br>
+        <a href="mailto:manuac93@gmail.com" target="_blank">
+          <span class="footer-contact">email me</span>
+        </a>&nbsp;&nbsp;
+        <a href="ManuAc.pdf" target="_blank">
+          <span class="footer-contact">resume</span>
+        </a>
+        <br><br>
+        <span id="footer-copyright">&copy <span style="color:#c0392b;">manu a c</span> - all rights reserved</span>
+        <br>
+        <span class="footer-contact" id="scrolltop"> back to the top </span>
+      </div>
+    </center>
+  </div>
+</footer>
+
+</body>
+</html>
